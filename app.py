@@ -1,17 +1,11 @@
+# app.py
 
 import streamlit as st
-from audiorecorder import audiorecorder
 
-# Title
-st.title("🎙️ AI Interview Feedback - Voice Input")
+def main():
+    st.set_page_config(page_title="Kelpath - AI Interview Feedback", layout="centered")
+    st.title("🎤 Kelpath - AI Interview Feedback System")
+    st.write("Upload your audio or speak directly, and let AI give you feedback on your answer!")
 
-# Record Audio
-st.subheader("Step 1: Record Your Interview Answer")
-audio = audiorecorder("🔴 Start Recording", "🔁 Stop Recording")
-
-if len(audio) > 0:
-    st.audio(audio.tobytes(), format="audio/wav")
-    # Save to file
-    with open("temp_audio.wav", "wb") as f:
-        f.write(audio.tobytes())
-    st.success("✅ Audio saved as temp_audio.wav")
+if __name__ == "__main__":
+    main()
