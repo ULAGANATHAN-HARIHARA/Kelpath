@@ -1,1 +1,21 @@
+# 🔒 Never commit secrets
+.env
+
+# 🧹 Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 📦 Virtual environments
+venv/
+env/
+
+# 🧪 IDE and editor settings
+.vscode/
+.idea/
+
+# ⚙️ OS-generated files
+.DS_Store
+Thumbs.db
 
