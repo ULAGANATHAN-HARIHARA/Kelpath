@@ -1,1 +1,5 @@
 
+1_streamlit
+2)openai
+3)python-dotenv
+4)PyMuPDF
